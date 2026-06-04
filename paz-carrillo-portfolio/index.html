@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paz Carrillo — Portfolio</title>
+  <meta name="description" content="Portfolio de Paz María Carrillo — Diseñadora Gráfica e Ilustradora" />
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+
+  <!-- Lenis -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
+
+  <!-- SplitType -->
+  <script src="https://unpkg.com/split-type@0.3.4/umd/index.min.js" defer></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-word-wrap"><span class="loader-word">Portfolio</span></div>
+    <div class="loader-bar"></div>
+  </div>
+
+  <!-- CURSOR -->
+  <div id="cursor" aria-hidden="true"></div>
+  <div id="cursor-follower" aria-hidden="true"></div>
+
+  <!-- PROGRESS -->
+  <div id="progress-bar" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <nav id="nav" aria-label="Navegación principal">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">Paz Carrillo</a>
+      <ul class="nav-links" role="list">
+        <li><a href="#sobre-mi">00 — Sobre mí</a></li>
+        <li><a href="#sec-universitarios">01 — Universitarios</a></li>
+        <li><a href="#sec-profesionales">02 — Profesionales</a></li>
+        <li><a href="#sec-ilustraciones">03 — Ilustraciones</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div id="mobile-menu" aria-hidden="true">
+    <ul role="list">
+      <li><a href="#sobre-mi">00 — Sobre mí</a></li>
+      <li><a href="#sec-universitarios">01 — Universitarios</a></li>
+      <li><a href="#sec-profesionales">02 — Profesionales</a></li>
+      <li><a href="#sec-ilustraciones">03 — Ilustraciones</a></li>
+    </ul>
+  </div>
+
+  <main id="main">
+
+    <!-- ================================================
+         HERO / COVER  (pág. 1)
+    ================================================ -->
+    <section id="hero" class="s-hero">
+      <div class="hero-rule js-rule"></div>
+
+      <div class="hero-meta js-fade">
+        <span class="hero-star">*</span>
+        <span>Diseño Gráfico</span>
+        <span>Paz María Carrillo</span>
+        <span>@arteypazcarrillo</span>
+        <span>2026</span>
+      </div>
+
+      <h1 class="hero-title js-hero-title">Portfolio</h1>
+
+      <span class="hero-xx js-fade">xx</span>
+
+      <div class="hero-scroll js-fade">
+        <span>scroll</span>
+        <div class="hero-scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         SOBRE MÍ  (págs. 2–3)
+    ================================================ -->
+    <section id="sobre-mi" class="s-sobre">
+
+      <!-- Pág. 2 — saludo + contacto -->
+      <div class="sobre-greeting">
+        <div class="section-label">/SOBRE MI/</div>
+        <div class="sobre-left">
+          <h2 class="sobre-hola js-split-chars">¡HOLA!</h2>
+          <p class="sobre-name">&lt;&nbsp;Soy Paz Carrillo</p>
+          <div class="sobre-contact-block">
+            <p class="sobre-contact-label">[CONTACTO]</p>
+            <a href="mailto:Pazcarrillo2003@gmail.com" class="link-underline">Pazcarrillo2003@gmail.com</a>
+            <a href="tel:+541157297657" class="link-underline">11&nbsp;5729&nbsp;7657</a>
+            <a href="https://www.instagram.com/arteypazcarrillo" target="_blank" rel="noopener" class="link-underline">arteypazcarrillo</a>
+          </div>
+        </div>
+        <div class="section-counter">/00</div>
+      </div>
+
+      <!-- Pág. 3 — bio completa -->
+      <div class="sobre-bio" id="sobre-bio">
+        <div class="sobre-bio-img js-img-reveal">
+          <img src="assets/images/sobre-mi-portrait.jpg" alt="Paz Carrillo" />
+        </div>
+        <div class="sobre-bio-content">
+          <h2 class="sobre-bio-title js-split-chars">SOBRE MI</h2>
+
+          <div class="bio-grid">
+
+            <div class="bio-col">
+              <div class="bio-label">[HERRAMIENTAS]</div>
+              <div class="bio-sub-group">
+                <span class="bio-sub-title">/Diseño y Edición/</span>
+                <p>Adobe Illustrator, Adobe Photoshop, Adobe InDesign, Figma, Canva, CapCut</p>
+              </div>
+              <div class="bio-sub-group">
+                <span class="bio-sub-title">/Gestión y Comunicación/</span>
+                <p>Paquete Office, Google Workspace, RR.SS, Trello, Herramientas de IA</p>
+              </div>
+
+              <div class="bio-label">[IDIOMAS]</div>
+              <div class="bio-sub-group">
+                <span class="bio-sub-title">/Español/</span><p>Nativo</p>
+                <span class="bio-sub-title">/Inglés/</span><p>IGCSE Literatura Inglesa, IGCSE Mathematic Core</p>
+                <span class="bio-sub-title">/Francés/</span><p>DELF A1 y A2</p>
+                <span class="bio-sub-title">/Portugués/</span>
+              </div>
+            </div>
+
+            <div class="bio-col">
+              <div class="bio-label">[FORMACIÓN]</div>
+              <div class="bio-sub-group">
+                <span class="bio-sub-title">/Diseño Gráfico/</span>
+                <p>Universidad de Palermo — 2022–2025</p>
+              </div>
+              <div class="bio-sub-group">
+                <span class="bio-sub-title">/Licenciatura en Negocios de Diseño y Comunicación/</span>
+                <p>Universidad de Palermo — 2025–Presente</p>
+              </div>
+              <div class="bio-sub-group">
+                <span class="bio-sub-title">/Colegio Jesús María/</span>
+                <p>Bachiller en lenguas modernas bilingüe en Inglés con intensificación en francés — 2004–2021</p>
+              </div>
+
+              <div class="bio-label">[RECONOCIMIENTOS ACADÉMICOS]</div>
+              <div class="bio-sub-group">
+                <p><strong>Universidad de Palermo (2025)</strong> — Segundo Premio — Producción Profesional de Estudiantes</p>
+                <p><strong>Universidad de Palermo (2024)</strong> — Segundo Premio — Creatividad Palermo</p>
+                <p><strong>Universidad de Palermo (2023)</strong> — Tercer Premio — Ensayo sobre la imagen</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="section-counter">/00</div>
+      </div>
+
+    </section>
+
+    <!-- ================================================
+         ÍNDICE  (pág. 4)
+    ================================================ -->
+    <section id="indice" class="s-indice">
+      <div class="section-label">/CONTENIDOS/</div>
+      <h2 class="indice-title js-split-chars">ÍNDICE</h2>
+      <nav class="indice-list" aria-label="Índice de secciones">
+        <a href="#sobre-mi" class="indice-item">
+          <span class="indice-num">00</span>
+          <span class="indice-name">SOBRE MI / PRESENTACIÓN</span>
+          <span class="indice-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="#sec-universitarios" class="indice-item">
+          <span class="indice-num">01</span>
+          <span class="indice-name">PROYECTOS UNIVERSITARIOS</span>
+          <span class="indice-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="#sec-profesionales" class="indice-item">
+          <span class="indice-num">02</span>
+          <span class="indice-name">PROYECTOS PERSONALES</span>
+          <span class="indice-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="#sec-ilustraciones" class="indice-item">
+          <span class="indice-num">03</span>
+          <span class="indice-name">ILUSTRACIONES DIGITALES</span>
+          <span class="indice-arrow" aria-hidden="true">→</span>
+        </a>
+      </nav>
+      <div class="section-counter">/00</div>
+    </section>
+
+    <!-- ================================================
+         SECCIÓN 01: PROYECTOS UNIVERSITARIOS  (pág. 5)
+    ================================================ -->
+    <section id="sec-universitarios" class="s-divider">
+      <div class="divider-bg-num js-parallax-num">01</div>
+      <div class="divider-content">
+        <h2 class="divider-title">PROYECTOS<br><span class="divider-slash">/</span>UNIVERSITARIOS</h2>
+        <p>/Universidad de Palermo/</p>
+        <p>2022&nbsp;–&nbsp;2025</p>
+      </div>
+      <div class="section-counter">/01</div>
+    </section>
+
+    <!-- PROJECT: NODO  (págs. 6–11) -->
+    <article class="project" id="nodo">
+      <div class="project-intro">
+        <div class="project-intro-text">
+          <span class="project-year">/2024/</span>
+          <p class="project-num">01/</p>
+          <h3 class="project-title js-split-chars">NODO</h3>
+          <p class="project-desc">Nodo es un proyecto de identidad y comunicación para un hotel de negocios enfocado en innovación, conectividad y experiencia humana.</p>
+          <dl class="project-meta">
+            <div class="meta-row">
+              <dt><span class="meta-chevron">&lt;</span> Servicio</dt>
+              <dd class="meta-tags">
+                <span>Diseño de identidad visual</span>
+                <span>Diseño de señalética</span>
+                <span>Diseño editorial</span>
+                <span>Diseño de publicidad</span>
+                <span>Diseño web</span>
+                <span>Diseño de packaging</span>
+              </dd>
+            </div>
+            <div class="meta-row">
+              <dt><span class="meta-chevron">&lt;</span> Rol</dt>
+              <dd>Diseñadora Gráfica</dd>
+            </div>
+            <div class="meta-row">
+              <dt><span class="meta-chevron">&lt;</span> Industria</dt>
+              <dd>Hotelería</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="project-intro-img js-img-reveal">
+          <img src="assets/images/nodo-hero.jpg" alt="NODO — Hotel de negocios, identidad visual" />
+        </div>
+      </div>
+      <div class="section-counter">/01</div>
+
+      <!-- Gallery pág. 7 -->
+      <div class="gallery g-split">
+        <div class="g-split-main js-img-reveal"><img src="assets/images/nodo-g1-main.jpg" alt="NODO" /></div>
+        <div class="g-split-col">
+          <div class="js-img-reveal"><img src="assets/images/nodo-g1-a.jpg" alt="NODO" /></div>
+          <div class="js-img-reveal"><img src="assets/images/nodo-g1-b.jpg" alt="NODO" /></div>
+          <div class="js-img-reveal"><img src="assets/images/nodo-g1-c.jpg" alt="NODO" /></div>
+        </div>
+      </div>
+
+      <!-- Gallery pág. 8 -->
+      <div class="gallery g-mosaic-6">
+        <div class="js-img-reveal"><img src="assets/images/nodo-g2-a.jpg" alt="NODO" /></div>
+        <div class="js-img-reveal"><img src="assets/images/nodo-g2-b.jpg" alt="NODO" /></div>
+        <div class="js-img-reveal"><img src="assets/images/nodo-g2-c.jpg" alt="NODO" /></div>
+        <!-- d y e juntas con PNG entre ellas -->
+        <div class="g-mosaic-de-wrap">
+          <div class="js-img-reveal"><img src="assets/images/nodo-g2-d.jpg" alt="NODO" /></div>
+          <div class="js-img-reveal"><img src="assets/images/nodo-g2-e.jpg" alt="NODO" /></div>
+          <div class="g-mosaic-overlay-png" aria-hidden="true">
+            <img src="assets/images/nodo-g2-f.png" alt="" role="presentation" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Gallery pág. 9 — feature -->
+      <div class="gallery g-feature">
+        <div class="js-img-reveal"><img src="assets/images/nodo-g3-feature.jpg" alt="NODO" /></div>
+      </div>
+
+      <!-- Gallery pág. 10 -->
+      <div class="gallery g-two">
+        <div class="js-img-reveal"><img src="assets/images/nodo-g4-a.jpg" alt="NODO" /></div>
+        <div class="js-img-reveal"><img src="assets/images/nodo-g4-b.jpg" alt="NODO" /></div>
+      </div>
+
+      <!-- Gallery pág. 11 — full bleed -->
+      <div class="gallery g-full">
+        <div class="js-img-reveal"><img src="assets/images/nodo-g5-full.jpg" alt="NODO" /></div>
+      </div>
+    </article>
+
+    <!-- PROJECT: HYDRO  (págs. 12–13) -->
+    <article class="project" id="hydro">
+      <div class="project-intro">
+        <div class="project-intro-text">
+          <span class="project-year">/2025/</span>
+          <p class="project-num">02/</p>
+          <h3 class="project-title js-split-chars">HYDRO</h3>
+          <p class="project-desc">Hydro es un proyecto que propone una alternativa sustentable para el consumo de agua. La propuesta combina estaciones de recarga en supermercados y espacios públicos con envases reutilizables de aluminio reciclado.</p>
+          <dl class="project-meta">
+            <div class="meta-row">
+              <dt><span class="meta-chevron">&lt;</span> Servicio</dt>
+              <dd class="meta-tags">
+                <span>Diseñadora Gráfica</span>
+                <span>Desarrollo de idea de negocio</span>
+                <span>Diseño de identidad visual</span>
+                <span>Diseño de packaging</span>
+                <span>Contenido para redes</span>
+              </dd>
+            </div>
+            <div class="meta-row">
+              <dt><span class="meta-chevron">&lt;</span> Industria</dt>
+              <dd>Bebidas</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="project-intro-img js-img-reveal">
+          <img src="assets/images/hydro-hero.jpg" alt="HYDRO — Proyecto sustentable de agua" />
+        </div>
+      </div>
+      <div class="section-counter">/01</div>
+
+      <!-- Gallery pág. 13 -->
+      <div class="gallery g-hero-top">
+        <div class="g-hero-main js-img-reveal"><img src="assets/images/hydro-g1-hero.jpg" alt="HYDRO" /></div>
+        <div class="g-hero-row">
+          <div class="js-img-reveal"><img src="assets/images/hydro-g1-a.jpg" alt="HYDRO" /></div>
+          <div class="js-img-reveal"><img src="assets/images/hydro-g1-b.jpg" alt="HYDRO" /></div>
+          <div class="js-img-reveal"><img src="assets/images/hydro-g1-c.jpg" alt="HYDRO" /></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROJECT: INTERVALO  (págs. 14–15) -->
+    <article class="project" id="intervalo">
+      <div class="project-intro">
+        <div class="project-intro-text">
+          <span class="project-year">/2025/</span>
+          <p class="project-num">03/</p>
+          <h3 class="project-title js-split-chars">INTERVALO</h3>
+          <p class="project-desc">Intervalo es un proyecto cultural y digital que busca centralizar la cartelera teatral argentina en una plataforma accesible, organizada y actualizada. Surge como respuesta a la dispersión de la información teatral, ofreciendo una solución funcional que conecta espectadores con propuestas culturales.</p>
+          <dl class="project-meta">
+            <div class="meta-row">
+              <dt><span class="meta-chevron">&lt;</span> Servicio</dt>
+              <dd class="meta-tags">
+                <span>Diseñadora Gráfica</span>
+                <span>Desarrollo de idea de negocio</span>
+                <span>Diseño de identidad visual</span>
+                <span>Diseño de packaging</span>
+                <span>Contenido para redes</span>
+              </dd>
+            </div>
+            <div class="meta-row">
+              <dt><span class="meta-chevron">&lt;</span> Industria</dt>
+              <dd>Entretenimiento</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="project-intro-img js-img-reveal">
+          <img src="assets/images/intervalo-hero.jpg" alt="INTERVALO — Plataforma teatral argentina" />
+        </div>
+      </div>
+      <div class="section-counter">/01</div>
+
+      <!-- Gallery pág. 15 -->
+      <div class="gallery g-triptych">
+        <div class="js-img-reveal"><img src="assets/images/intervalo-g1-a.jpg" alt="INTERVALO" /></div>
+        <div class="js-img-reveal"><img src="assets/images/intervalo-g1-b.jpg" alt="INTERVALO" /></div>
+        <div class="js-img-reveal"><img src="assets/images/intervalo-g1-c.jpg" alt="INTERVALO" /></div>
+      </div>
+    </article>
+
+    <!-- PROJECT: TINDER  (págs. 16–18) -->
+    <article class="project" id="tinder">
+      <div class="project-intro">
+        <div class="project-intro-text">
+          <span class="project-year">/2024/</span>
+          <p class="project-num">04/</p>
+          <h3 class="project-title js-split-chars">TINDER</h3>
+          <p class="project-desc">Se realizó una campaña publicitaria conceptual desarrollada a partir del mensaje clave "Siempre fuimos así", basada en la necesidad humana de conectar con otras personas existió a lo largo de toda la historia. La propuesta tomó como recurso visual distintas vanguardias artísticas para representar cómo esa búsqueda de vínculos estuvo presente en diferentes épocas y contextos culturales.</p>
+          <dl class="project-meta">
+            <div class="meta-row">
+              <dt><span class="meta-chevron">&lt;</span> Servicio</dt>
+              <dd>Diseño publicitario</dd>
+            </div>
+            <div class="meta-row">
+              <dt><span class="meta-chevron">&lt;</span> Rol</dt>
+              <dd class="meta-tags">
+                <span>Diseñadora Gráfica</span>
+                <span>Desarrollo de campaña</span>
+              </dd>
+            </div>
+            <div class="meta-row">
+              <dt><span class="meta-chevron">&lt;</span> Industria</dt>
+              <dd>Aplicaciones de citas</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="project-intro-img project-intro-img--double">
+          <div class="js-img-reveal"><img src="assets/images/tinder-hero-a.jpg" alt="TINDER — Siempre fuimos así" /></div>
+          <div class="js-img-reveal"><img src="assets/images/tinder-hero-b.jpg" alt="TINDER — Siempre fuimos así" /></div>
+        </div>
+      </div>
+      <div class="section-counter">/01</div>
+
+      <!-- Gallery pág. 17 -->
+      <div class="gallery g-campaign">
+        <div class="g-campaign-left js-img-reveal"><img src="assets/images/tinder-g1-a.jpg" alt="TINDER" /></div>
+        <div class="g-campaign-right">
+          <div class="js-img-reveal"><img src="assets/images/tinder-g1-b.jpg" alt="TINDER" /></div>
+          <div class="js-img-reveal"><img src="assets/images/tinder-g1-c.jpg" alt="TINDER" /></div>
+          <div class="js-img-reveal"><img src="assets/images/tinder-g1-d.jpg" alt="TINDER" /></div>
+        </div>
+      </div>
+
+      <!-- Gallery pág. 18 — full bleed -->
+      <div class="gallery g-full">
+        <div class="js-img-reveal"><img src="assets/images/tinder-g2-full.jpg" alt="TINDER — Campaña completa" /></div>
+      </div>
+    </article>
+
+    <!-- ================================================
+         SECCIÓN 02: PROYECTOS PROFESIONALES  (pág. 19)
+    ================================================ -->
+    <section id="sec-profesionales" class="s-divider">
+      <div class="divider-bg-num js-parallax-num">02</div>
+      <div class="divider-content">
+        <h2 class="divider-title">PROYECTOS<br><span class="divider-slash">/</span>PROFESIONALES</h2>
+        <p>/Proyecto personal/</p>
+        <p>2022&nbsp;–&nbsp;2026</p>
+      </div>
+      <div class="section-counter">/02</div>
+    </section>
+
+    <!-- PROJECT: LIMA  (págs. 20–21) -->
+    <article class="project" id="lima">
+      <div class="project-intro">
+        <div class="project-intro-text">
+          <span class="project-year">/2024/</span>
+          <p class="project-num">01/</p>
+          <h3 class="project-title js-split-chars">LIMA</h3>
+          <p class="project-desc">Lima Pastelería es un proyecto de identidad visual desarrollado para un emprendimiento gastronómico enfocado en pastelería y productos dulces.</p>
+          <dl class="project-meta">
+            <div class="meta-row">
+              <dt><span class="meta-chevron">&lt;</span> Servicio</dt>
+              <dd>Diseño de identidad visual</dd>
+            </div>
+            <div class="meta-row">
+              <dt><span class="meta-chevron">&lt;</span> Rol</dt>
+              <dd>Diseñadora Gráfica</dd>
+            </div>
+            <div class="meta-row">
+              <dt><span class="meta-chevron">&lt;</span> Industria</dt>
+              <dd>Gastronomía</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="project-intro-img js-img-reveal">
+          <img src="assets/images/lima-hero.jpg" alt="LIMA Pastelería — Identidad visual" />
+        </div>
+      </div>
+      <div class="section-counter">/02</div>
+
+      <!-- Gallery pág. 21 -->
+      <div class="gallery g-asym">
+        <div class="g-asym-narrow js-img-reveal"><img src="assets/images/lima-g1-a.jpg" alt="LIMA" /></div>
+        <div class="g-asym-wide js-img-reveal"><img src="assets/images/lima-g1-b.jpg" alt="LIMA" /></div>
+      </div>
+    </article>
+
+    <!-- PROJECT: CONSTRUCCIÓN INTELIGENTE  (págs. 22–23) -->
+    <article class="project" id="construccion">
+      <div class="project-intro">
+        <div class="project-intro-text">
+          <span class="project-year">/2026/</span>
+          <p class="project-num">02/</p>
+          <h3 class="project-title js-split-chars">CONSTRUCCIÓN<span class="paren">(</span><br>INTELIGENTE</h3>
+          <p class="project-desc">Construcción Inteligente fue un proyecto de rediseño de identidad visual para una empresa enfocada en transformar los procesos constructivos mediante tecnología e inteligencia artificial.</p>
+          <dl class="project-meta">
+            <div class="meta-row">
+              <dt><span class="meta-chevron">&lt;</span> Servicio</dt>
+              <dd>Diseño de identidad visual</dd>
+            </div>
+            <div class="meta-row">
+              <dt><span class="meta-chevron">&lt;</span> Trabajo en conjunto</dt>
+              <dd class="meta-tags">
+                <span>@dpto.creativoo</span>
+                <span>@roberral1</span>
+              </dd>
+            </div>
+            <div class="meta-row">
+              <dt><span class="meta-chevron">&lt;</span> Rol</dt>
+              <dd>Diseñadora Gráfica</dd>
+            </div>
+            <div class="meta-row">
+              <dt><span class="meta-chevron">&lt;</span> Industria</dt>
+              <dd>Tecnología / Software</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="project-intro-img js-img-reveal">
+          <img src="assets/images/construccion-hero.jpg" alt="Construcción Inteligente — Identidad visual" />
+        </div>
+      </div>
+      <div class="section-counter">/02</div>
+
+      <!-- Gallery pág. 23 -->
+      <div class="gallery g-grid-3x2">
+        <div class="js-img-reveal"><img src="assets/images/construccion-g1-a.jpg" alt="Construcción Inteligente" /></div>
+        <div class="js-img-reveal"><img src="assets/images/construccion-g1-b.jpg" alt="Construcción Inteligente" /></div>
+        <div class="js-img-reveal"><img src="assets/images/construccion-g1-c.jpg" alt="Construcción Inteligente" /></div>
+        <div class="js-img-reveal"><img src="assets/images/construccion-g1-d.jpg" alt="Construcción Inteligente" /></div>
+        <div class="js-img-reveal"><img src="assets/images/construccion-g1-e.jpg" alt="Construcción Inteligente" /></div>
+        <div class="js-img-reveal"><img src="assets/images/construccion-g1-f.jpg" alt="Construcción Inteligente" /></div>
+      </div>
+    </article>
+
+    <!-- PROJECT: VALENTINA WYSS  (págs. 24–25) -->
+    <article class="project" id="valentina">
+      <div class="project-intro">
+        <div class="project-intro-text">
+          <span class="project-year">/2026/</span>
+          <p class="project-num">03/</p>
+          <h3 class="project-title js-split-chars">VALENTINA<br>WYSS</h3>
+          <p class="project-desc">Construcción Inteligente fue un proyecto de rediseño de identidad visual para una empresa enfocada en transformar los procesos constructivos mediante tecnología e inteligencia artificial.</p>
+          <dl class="project-meta">
+            <div class="meta-row">
+              <dt><span class="meta-chevron">&lt;</span> Servicio</dt>
+              <dd>Diseño de identidad visual</dd>
+            </div>
+            <div class="meta-row">
+              <dt><span class="meta-chevron">&lt;</span> Trabajo en conjunto</dt>
+              <dd class="meta-tags">
+                <span>@dpto.creativoo</span>
+                <span>@roberral1</span>
+              </dd>
+            </div>
+            <div class="meta-row">
+              <dt><span class="meta-chevron">&lt;</span> Rol</dt>
+              <dd>Diseñadora Gráfica</dd>
+            </div>
+            <div class="meta-row">
+              <dt><span class="meta-chevron">&lt;</span> Industria</dt>
+              <dd>Música / DJ</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="project-intro-img js-img-reveal">
+          <img src="assets/images/valentina-hero.jpg" alt="Valentina Wyss — Identidad visual" />
+        </div>
+      </div>
+      <div class="section-counter">/02</div>
+
+      <!-- Gallery pág. 25 -->
+      <div class="gallery g-valentina">
+        <div class="g-valentina-top">
+          <div class="js-img-reveal"><img src="assets/images/valentina-g1-a.jpg" alt="Valentina Wyss" /></div>
+          <div class="js-img-reveal"><img src="assets/images/valentina-g1-b.jpg" alt="Valentina Wyss" /></div>
+        </div>
+        <div class="g-valentina-bottom">
+          <div class="js-img-reveal"><img src="assets/images/valentina-g1-c.jpg" alt="Valentina Wyss" /></div>
+          <div class="js-img-reveal"><img src="assets/images/valentina-g1-d.jpg" alt="Valentina Wyss" /></div>
+          <div class="js-img-reveal"><img src="assets/images/valentina-g1-e.jpg" alt="Valentina Wyss" /></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROJECT: SAVE THE DATE  (págs. 26–27) -->
+    <article class="project" id="savethedate">
+      <div class="project-intro">
+        <div class="project-intro-text">
+          <span class="project-year">/2026/</span>
+          <p class="project-num">04/</p>
+          <h3 class="project-title js-split-chars">SAVE<span class="paren">(</span><br>THE DATE</h3>
+          <dl class="project-meta">
+            <div class="meta-row">
+              <dt><span class="meta-chevron">&lt;</span> Servicio</dt>
+              <dd>Diseño de invitación</dd>
+            </div>
+            <div class="meta-row">
+              <dt><span class="meta-chevron">&lt;</span> Rol</dt>
+              <dd class="meta-tags">
+                <span>Diseñadora Gráfica</span>
+                <span>Ilustradora</span>
+              </dd>
+            </div>
+            <div class="meta-row">
+              <dt><span class="meta-chevron">&lt;</span> Industria</dt>
+              <dd>Casamiento</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="project-intro-img project-intro-img--centered">
+          <div class="project-intro-img-frame js-img-reveal">
+            <img src="assets/images/savethedate-hero.jpg" alt="Save the Date — Invitación ilustrada" />
+          </div>
+        </div>
+      </div>
+      <div class="section-counter">/02</div>
+
+      <!-- Gallery pág. 27 -->
+      <div class="gallery g-savethedate">
+        <div class="g-std-left js-img-reveal"><img src="assets/images/savethedate-g1-main.jpg" alt="Save the Date" /></div>
+        <div class="g-std-right js-img-reveal"><img src="assets/images/savethedate-g1-side.jpg" alt="Save the Date" /></div>
+      </div>
+    </article>
+
+    <!-- ================================================
+         SECCIÓN 03: ILUSTRACIONES DIGITALES  (pág. 28)
+    ================================================ -->
+    <section id="sec-ilustraciones" class="s-divider">
+      <div class="divider-bg-num js-parallax-num">03</div>
+      <div class="divider-content">
+        <h2 class="divider-title">ILUSTRACIONES<br><span class="divider-slash">/</span>DIGITALES</h2>
+        <p>/Proyecto personal/</p>
+        <p>2019&nbsp;–&nbsp;2026</p>
+      </div>
+      <div class="section-counter">/03</div>
+    </section>
+
+    <!-- PROJECT: REMERAS PERSONALIZADAS  (págs. 29–31) -->
+    <article class="project" id="remeras">
+      <div class="project-intro">
+        <div class="project-intro-text">
+          <span class="project-year">/2026/</span>
+          <p class="project-num">01/</p>
+          <h3 class="project-title js-split-chars">REMERAS<span class="paren">(</span><br>PERSONALIZADAS</h3>
+          <dl class="project-meta">
+            <div class="meta-row">
+              <dt><span class="meta-chevron">&lt;</span> Servicio</dt>
+              <dd>Diseño de remeras</dd>
+            </div>
+            <div class="meta-row">
+              <dt><span class="meta-chevron">&lt;</span> Rol</dt>
+              <dd class="meta-tags">
+                <span>Diseñadora Gráfica</span>
+                <span>Ilustradora</span>
+              </dd>
+            </div>
+            <div class="meta-row">
+              <dt><span class="meta-chevron">&lt;</span> Industria</dt>
+              <dd>Indumentaria</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="project-intro-img project-intro-img--double">
+          <div class="js-img-reveal"><img src="assets/images/remeras-hero-a.jpg" alt="Remeras Personalizadas" /></div>
+          <div class="js-img-reveal"><img src="assets/images/remeras-hero-b.jpg" alt="Remeras Personalizadas" /></div>
+        </div>
+      </div>
+      <div class="section-counter">/03</div>
+
+      <!-- Gallery pág. 30 -->
+      <div class="gallery g-remeras-a">
+        <div class="js-img-reveal"><img src="assets/images/remeras-g1-a.jpg" alt="Remera" /></div>
+        <div class="js-img-reveal"><img src="assets/images/remeras-g1-b.jpg" alt="Remera" /></div>
+        <div class="js-img-reveal"><img src="assets/images/remeras-g1-c.jpg" alt="Remera" /></div>
+      </div>
+
+      <!-- Gallery pág. 31 -->
+      <div class="gallery g-remeras-b">
+        <div class="js-img-reveal"><img src="assets/images/remeras-g2-a.jpg" alt="Remera" /></div>
+        <div class="js-img-reveal"><img src="assets/images/remeras-g2-b.jpg" alt="Remera" /></div>
+        <div class="js-img-reveal"><img src="assets/images/remeras-g2-c.jpg" alt="Remera" /></div>
+        <div class="js-img-reveal"><img src="assets/images/remeras-g2-d.jpg" alt="Remera" /></div>
+      </div>
+    </article>
+
+    <!-- PROJECT: ILUSTRACIONES DIGITALES  (págs. 32–36) -->
+    <article class="project" id="ilustraciones-digitales">
+      <div class="project-intro">
+        <div class="project-intro-text">
+          <span class="project-year">/2019–2026/</span>
+          <p class="project-num">02/</p>
+          <h3 class="project-title js-split-chars">ILUSTRACIONES</h3>
+          <p class="project-insta">@arteypazcarrillo</p>
+          <dl class="project-meta">
+            <div class="meta-row">
+              <dt><span class="meta-chevron">&lt;</span> Rol</dt>
+              <dd>Ilustradora digital</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="project-intro-img project-intro-img--centered">
+          <div class="project-intro-img-frame js-img-reveal">
+            <img src="assets/images/ilustraciones-hero.jpg" alt="Ilustraciones digitales" />
+          </div>
+        </div>
+      </div>
+      <div class="section-counter">/03</div>
+
+      <!-- pág. 33 — Ilustraciones complejas 2021 -->
+      <div class="illus-group">
+        <div class="illus-meta">
+          <span>/2021/</span>
+          <span>Ilustraciones complejas</span>
+        </div>
+        <div class="gallery g-duo">
+          <div class="js-img-reveal"><img src="assets/images/illus-2021-a.jpg" alt="Ilustración compleja 2021" /></div>
+          <div class="js-img-reveal"><img src="assets/images/illus-2021-b.jpg" alt="Ilustración compleja 2021" /></div>
+        </div>
+      </div>
+
+      <!-- pág. 34 — Ilustraciones complejas 2023–2024 -->
+      <div class="illus-group">
+        <div class="illus-meta">
+          <span>/2023–2024/</span>
+          <span>Ilustraciones complejas</span>
+        </div>
+        <div class="gallery g-triptych">
+          <div class="js-img-reveal"><img src="assets/images/illus-2023-a.jpg" alt="Ilustración compleja 2023" /></div>
+          <div class="js-img-reveal"><img src="assets/images/illus-2023-b.jpg" alt="Ilustración compleja 2023" /></div>
+          <div class="js-img-reveal"><img src="assets/images/illus-2024-a.jpg" alt="Ilustración compleja 2024" /></div>
+        </div>
+      </div>
+
+      <!-- pág. 35 — Ilustraciones complejas 2021 (adicional) -->
+      <div class="illus-group">
+        <div class="illus-meta">
+          <span>/2021/</span>
+          <span>Ilustraciones complejas</span>
+        </div>
+        <div class="gallery g-duo">
+          <div class="js-img-reveal"><img src="assets/images/illus-2021-c.jpg" alt="Ilustración compleja 2021" /></div>
+          <div class="js-img-reveal"><img src="assets/images/illus-2021-d.jpg" alt="Ilustración compleja 2021" /></div>
+        </div>
+      </div>
+
+      <!-- pág. 36 — Ilustraciones vectoriales 2023–2024 -->
+      <div class="illus-group">
+        <div class="illus-meta">
+          <span>/2023–2024/</span>
+          <span>Ilustraciones vectoriales</span>
+        </div>
+        <div class="gallery g-mosaic-5">
+          <div class="js-img-reveal"><img src="assets/images/illus-vector-a.jpg" alt="Ilustración vectorial" /></div>
+          <div class="js-img-reveal"><img src="assets/images/illus-vector-b.jpg" alt="Ilustración vectorial" /></div>
+          <div class="js-img-reveal"><img src="assets/images/illus-vector-c.jpg" alt="Ilustración vectorial" /></div>
+          <div class="js-img-reveal"><img src="assets/images/illus-vector-d.jpg" alt="Ilustración vectorial" /></div>
+          <div class="js-img-reveal"><img src="assets/images/illus-vector-e.jpg" alt="Ilustración vectorial" /></div>
+        </div>
+      </div>
+
+    </article>
+
+    <!-- ================================================
+         CLOSING / FOOTER  (pág. 37)
+    ================================================ -->
+    <footer id="footer" class="s-footer">
+      <div class="footer-rule js-rule"></div>
+      <div class="footer-inner">
+
+        <div class="footer-meta">
+          <span class="footer-star">*</span>
+          <span>Paz María Carrillo</span>
+          <a href="https://www.instagram.com/arteypazcarrillo" target="_blank" rel="noopener" class="link-underline">@arteypazcarrillo</a>
+          <a href="mailto:pazcarrillo2003@gmail.com" class="link-underline">pazcarrillo2003@gmail.com</a>
+          <a href="tel:+541157297657" class="link-underline">1157297657</a>
+        </div>
+
+        <div class="footer-img">
+          <img src="assets/images/footer-decoration.jpg" alt="" role="presentation" />
+        </div>
+
+        <div class="footer-thanks">
+          <h2 class="footer-gracias js-split-chars">Gracias<br>por<br>su atención</h2>
+        </div>
+
+        <span class="footer-xx">xx</span>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
